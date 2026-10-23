@@ -31,6 +31,8 @@ jobs:
         with:
           repository: wafer-space/gf180mcu-precheck
           path: gf180mcu-precheck
+          # flake-compat calls builtins.fetchGit on the source tree, which fails on shallow clones
+          fetch-depth: 0
 
       - name: Install GF180MCU PDK
         working-directory: gf180mcu-precheck
