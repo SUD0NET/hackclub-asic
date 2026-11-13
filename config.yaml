@@ -1,7 +1,7 @@
-id: 'ttgf26d'
-name: 'Tiny Tapeout GF 26d'
+id: 'asic1'
+name: 'Hack Club ASIC'
 pdk: 'gf180mcuD'
-end_date: '2026-12-07'
+end_date: '2026-12-01'
 project_dir: 'projects'
 top_level_macro: 'tt_gf_wrapper'
 powered_netlists: true
