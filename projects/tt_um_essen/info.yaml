@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "256x8 SRAM"      # Project title
+  author:       "Julia Desmazes"      # Your name
+  discord:      "essen__"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "256x8 SRAM for testing Hack Club ASIC"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:      50000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  tiles: "1x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_essen"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_essen.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "addr[0]"
+  ui[1]: "addr[1]"
+  ui[2]: "addr[2]"
+  ui[3]: "addr[3]"
+  ui[4]: "addr[4]"
+  ui[5]: "addr[5]"
+  ui[6]: "addr[6]"
+  ui[7]: "gwen"
+
+  # Outputs
+  uo[0]: "data_rd[0]"
+  uo[1]: "data_rd[1]"
+  uo[2]: "data_rd[2]"
+  uo[3]: "data_rd[3]"
+  uo[4]: "data_rd[4]"
+  uo[5]: "data_rd[5]"
+  uo[6]: "data_rd[6]"
+  uo[7]: "data_rd[7]"
+
+  # Bidirectional pins
+  uio[0]: "data_wr[0]"
+  uio[1]: "data_wr[1]"
+  uio[2]: "data_wr[2]"
+  uio[3]: "data_wr[3]"
+  uio[4]: "data_wr[4]"
+  uio[5]: "data_wr[5]"
+  uio[6]: "data_wr[6]"
+  uio[7]: "data_wr[7]"
+
+# Do not change!
+yaml_version: 6
