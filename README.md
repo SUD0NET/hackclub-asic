@@ -3,9 +3,9 @@
 [![gds](../../actions/workflows/gds.yaml/badge.svg)](../../actions/workflows/gds.yaml)
 [![precheck](../../actions/workflows/precheck.yaml/badge.svg)](../../actions/workflows/precheck.yaml)
 
-# Tiny Tapeout GF 26d
+# Hack Club ASIC Run 1
 
-- Visit https://tinytapeout.com for more information on the project and how to get involved.
+- Visit https://asic.hackclub.com for more information on the project and how to get involved.
 
 To learn about the chip's architecture, please refer to [the multiplexer documentation](https://github.com/TinyTapeout/tt-multiplexer/blob/main/docs/INFO.md).
 
