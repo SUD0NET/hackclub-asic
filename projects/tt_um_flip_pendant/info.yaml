@@ -1,0 +1,53 @@
+# Tiny Tapeout project information (ttgf-verilog-template)
+project:
+  title: "FLIP Fluid Simulation Pendant ASIC"
+  author: "Nitin Swarnkar"
+  discord: "nitin2468"
+  description: "256-particle Q4.12 PIC/FLIP fluid simulation ASIC with QPI PSRAM and I2C LIS2DW12/IS31FL3741A drivers for a 216-LED circular pendant"
+  language: "Amaranth"
+  clock_hz: 25000000
+
+  # Tile size on GF180MCU (wafer.space): options are "1x1", "1x2", "2x2", "4x2", "8x2"
+  tiles: "2x2"
+
+  # Top module name must start with "tt_um_"
+  top_module: "tt_um_flip_pendant"
+
+  # List your Verilog source files inside ./src/
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Must match the hardware connections.
+pinout:
+  # Inputs
+  ui[0]: "lis_int2_sleep (LIS2DW12 INT2 sleep state)"
+  ui[1]: "shake_btn (wake / splash impulse trigger)"
+  ui[2]: "ext_frame_sync (external 60 Hz frame trigger)"
+  ui[3]: "auto_run_en (1 = internal 60 Hz frame timer, 0 = ext_frame_sync)"
+  ui[4]: "accel_sa0 (LIS2DW12 I2C address select)"
+  ui[5]: "force_awake (1 = disable 90-frame sleep clock gating)"
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "psram_sclk (ESP-PSRAM64H QPI clock)"
+  uo[1]: "psram_ce_n (ESP-PSRAM64H active-low chip select)"
+  uo[2]: "psram_trans_dir (Level shifter direction: 1=ASIC->PSRAM, 0=PSRAM->ASIC)"
+  uo[3]: "core_busy (FLIP physics pipeline active)"
+  uo[4]: "frame_done (1-cycle pulse on FLIP frame completion)"
+  uo[5]: "clock_gated_sleep (high when fluid settled for 90 frames)"
+  uo[6]: "i2c_busy (I2C master transaction active)"
+  uo[7]: "error_flag (psram_error | i2c_ack_error | velocity_overflow)"
+
+  # Bidirectional pins
+  uio[0]: "psram_dq0 (ESP-PSRAM64H SIO0 / MOSI)"
+  uio[1]: "psram_dq1 (ESP-PSRAM64H SIO1 / MISO)"
+  uio[2]: "psram_dq2 (ESP-PSRAM64H SIO2)"
+  uio[3]: "psram_dq3 (ESP-PSRAM64H SIO3)"
+  uio[4]: "i2c_sda (Open-drain I2C data for LIS2DW12 & IS31FL3741A)"
+  uio[5]: "i2c_scl (Open-drain I2C clock for LIS2DW12 & IS31FL3741A)"
+  uio[6]: "psram_trans_oe_n (Level shifter active-low output enable)"
+  uio[7]: "is31_sdb (IS31FL3741A hardware shutdown bar, driven high)"
+
+# Do not change!
+yaml_version: 6

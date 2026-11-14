@@ -1,0 +1,52 @@
+151. Printing statistics.
+
+=== tt_um_flip_pendant ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     4369        - wires
+     4404        - wire bits
+      434        - public wires
+      469        - public wire bits
+        8        - ports
+       43        - port bits
+     4385 9.72E+04 cells
+      127 2.23E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       46 1.01E+03   gf180mcu_fd_sc_mcu7t5v0__and3_1
+       16  386.355   gf180mcu_fd_sc_mcu7t5v0__and4_1
+       69 1.51E+03   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      354 6.22E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+       80 1.93E+03   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+       22  676.122   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+      121 2.39E+03   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+       15  197.568   gf180mcu_fd_sc_mcu7t5v0__buf_1
+      344 3.02E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+      418 2.66E+04   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+       36 1.19E+03   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+      579 6.36E+03   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+      145 2.23E+03   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       48  948.326   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+      509  6.7E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       90 1.58E+03   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+       28  614.656   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+      151 3.31E+03   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      408 7.17E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+       27  711.245   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+       40   878.08   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+       44 1.06E+03   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+       24  632.218   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+        1   32.928   gf180mcu_fd_sc_mcu7t5v0__oai33_1
+      112 1.97E+03   gf180mcu_fd_sc_mcu7t5v0__or2_1
+       39  856.128   gf180mcu_fd_sc_mcu7t5v0__or3_1
+       19  500.506   gf180mcu_fd_sc_mcu7t5v0__or4_1
+        3   26.342   gf180mcu_fd_sc_mcu7t5v0__tieh
+        2   17.562   gf180mcu_fd_sc_mcu7t5v0__tiel
+       76 2.17E+03   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+       11  579.533   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+      321  8455.91   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+       60 3.03E+03   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_flip_pendant': 97199.065600
+     of which used for sequential elements: 26610.214400 (27.38%)
+
