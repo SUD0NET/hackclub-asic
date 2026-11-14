@@ -1,0 +1,48 @@
+project:
+  title: "Tiny8"
+  author: "Shaurya Baitule"
+  description: "Tiny8 8-bit CPU"
+  language: "Verilog"
+  clock_hz: 10000000
+  tiles: "2x2"
+  top_module: "tt_um_godofstrategy_tiny8"
+  source_files:
+    - "project.v"
+    - "tiny8_top.v"
+    - "tiny8_spi_programmer.v"
+    - "gf180mcu_ocd_ip_sram__sram256x8m8wm1__blackbox.v"
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: ""
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: ""
+  uo[1]: ""
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: "SPI_SCLK"
+  uio[1]: "SPI_MOSI"
+  uio[2]: "SPI_CS_N"
+  uio[3]: "PROG_MODE"
+  uio[4]: "READY"
+  uio[5]: "PROG_FULL"
+  uio[6]: "PC6_PROG"
+  uio[7]: "PC7_PROG"
+
+# Do not change!
+yaml_version: 6
