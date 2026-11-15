@@ -1,6 +1,6 @@
 [submodule "tt-multiplexer"]
 	path = tt-multiplexer
-	url = https://github.com/TinyTapeout/tt-multiplexer
+	url = https://github.com/opilitethesmartdev/tt-multiplexer-common-sram
 	branch = dev-gf
 [submodule "tt"]
 	path = tt
