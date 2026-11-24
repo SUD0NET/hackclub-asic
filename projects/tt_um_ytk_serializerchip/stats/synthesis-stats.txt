@@ -1,0 +1,34 @@
+109. Printing statistics.
+
+=== tt_um_ytk_serializerchip ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       72        - wires
+      107        - wire bits
+       22        - public wires
+       57        - public wire bits
+        8        - ports
+       43        - port bits
+       88 2.11E+03 cells
+        5   87.808   gf180mcu_fd_sc_mcu7t5v0__and2_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        6  131.712   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+        4   70.246   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+        9   79.027   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+       14  891.251   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+        2   65.856   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+        2  140.493   gf180mcu_fd_sc_mcu7t5v0__mux4_1
+        3   32.928   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+        4   61.466   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       10  131.712   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+        4   70.246   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+        5   109.76   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+        1   21.952   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+       16  140.493   gf180mcu_fd_sc_mcu7t5v0__tiel
+        1   26.342   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+
+   Chip area for module '\tt_um_ytk_serializerchip': 2105.196800
+     of which used for sequential elements: 891.251200 (42.34%)
+
